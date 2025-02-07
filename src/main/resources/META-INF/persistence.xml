@@ -14,6 +14,6 @@
 
       <property name="show_sql" value="true"/>
       <property name="format_sql" value="true"/>
-    </properties>
+    </properties>d
   </persistence-unit>
 </persistence>
