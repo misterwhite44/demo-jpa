@@ -8,6 +8,7 @@ public class Livre {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private int id;
 
     @Column(name = "TITRE", nullable = false)
@@ -16,7 +17,7 @@ public class Livre {
     @Column(name = "AUTEUR", nullable = false)
     private String auteur;
 
-    // Constructeurs
+    // ✅ Constructeurs
     public Livre() {}
 
     public Livre(String titre, String auteur) {
@@ -24,7 +25,7 @@ public class Livre {
         this.auteur = auteur;
     }
 
-    // Getters et Setters
+    // ✅ GETTERS & SETTERS
     public int getId() {
         return id;
     }
@@ -43,14 +44,5 @@ public class Livre {
 
     public void setAuteur(String auteur) {
         this.auteur = auteur;
-    }
-
-    @Override
-    public String toString() {
-        return "Livre{" +
-                "id=" + id +
-                ", titre='" + titre + '\'' +
-                ", auteur='" + auteur + '\'' +
-                '}';
     }
 }
